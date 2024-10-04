@@ -2,7 +2,6 @@ const jwt = require('jsonwebtoken');
 const axios = require('axios');
 const USER_CREDENTIALS = require('../model/userModel');
 
-// Función para manejar el inicio de sesión
 const login = (req, res) => {
     const { email, password } = req.body;
 
@@ -14,7 +13,6 @@ const login = (req, res) => {
     }
 };
 
-// Función para manejar la consulta del clima
 const getWeather = async (req, res) => {
     const { latitude, longitude } = req.query;
 
